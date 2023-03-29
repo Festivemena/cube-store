@@ -25,7 +25,7 @@ const Home = () => {
             <Image 
               src={Girl1}
               height={600}
-              width={420}
+              width={440}
             />
             <div className={`${dark ? `text-[#F9F9FA]` : `text-[#1F1F2B]`} absolute z-10 text-5xl font-noto font-bold px-[24px] -mt-[180px]`}>
               Fashion Sale
