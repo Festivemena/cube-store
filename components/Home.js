@@ -25,7 +25,7 @@ const Home = () => {
             <Image 
               src={Girl1}
               height={600}
-              width={400}
+              width={420}
             />
             <div className={`${dark ? `text-[#F9F9FA]` : `text-[#1F1F2B]`} absolute z-10 text-5xl font-noto font-bold px-[24px] -mt-[180px]`}>
               Fashion Sale
@@ -46,7 +46,7 @@ const Home = () => {
           </div>
           <div className=" inset-0 flex snap-x items-center gap-4 overflow-x-scroll px-3">
                 {homeNav.map((item, index) => (
-                    <div key={index} className="relative h-[150px] w-[150px] flex-shrink-0 snap-center lg:h-[400px] lg:w-[400px]">
+                    <div key={index} className="relative h-[150px] w-[125px] flex-shrink-0 snap-center lg:h-[400px] lg:w-[400px]">
                         <Image src={item.image} layout="fill" className={`${dark ? `bg-[#F9F9FA]` : `bg-[#1F1F2B]`} rounded-2xl`} />
                         <div className={`${dark ? `bg-[#1D1D27] text-[#F9F9FA]` : `bg-[#F9F9FA] text-[#1F1F2B]`} z-10 rounded-xl absolute text-[12px] mx-2 px-2 mt-1 uppercase`}>New</div>
                     </div>
