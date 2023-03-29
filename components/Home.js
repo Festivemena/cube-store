@@ -17,16 +17,19 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <div>
+        <div className='w-full h-full'>
         <div className={`${dark ? ` text-[#F9F9FA]` : `text-[#1F1F2B]`} w-full flex absolute z-10 pt-7 px-4 justify-between text-3xl`}>
             {dark ? <BsSun onClick={() => handleClick()} /> : <BsMoon onClick={() => handleClick()} />} <BsSearch />
         </div>
           <div>
-            <Image 
-              src={Girl1}
-              height={600}
-              width={440}
-            />
+            <div className='relative h-[600px] w-full'>
+              <Image 
+                src={Girl1}
+                // height={600}
+                // width={440}
+                layout="fill"
+              />
+            </div>
             <div className={`${dark ? `text-[#F9F9FA]` : `text-[#1F1F2B]`} absolute z-10 text-5xl font-noto font-bold px-[24px] -mt-[180px]`}>
               Fashion Sale
             </div>
